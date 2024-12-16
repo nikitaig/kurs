@@ -1,0 +1,5 @@
+<?php
+$COOKIE_VALIDATION_KEY = 'REFAGOJP;RGJOEQ OIREQJIOGREFDJKNLSHFD'; 
+$DB_NAME = 'ignatiev_ski';
+$DB_USERNAME = 'ignatiev_ski';
+$DB_PASSWORD = 'Sudoreb7*lol';
