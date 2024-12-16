@@ -1,0 +1,595 @@
+{
+	"info": {
+		"_postman_id": "3a9656ef-ec8a-4f96-8a8b-c46c414e368f",
+		"name": "kursovaya",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36761480"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "FIO",
+							"value": "Олег Олегов ОЛегович",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "pimpikus",
+							"type": "text"
+						},
+						{
+							"key": "passport",
+							"value": "1273871552",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "6471247341",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "ol@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Pimp123*",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://k-ignatiev.сделай.site/register",
+					"protocol": "https",
+					"host": [
+						"k-ignatiev",
+						"сделай",
+						"site"
+					],
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "FIO",
+							"value": "Олег Олегов ОЛегович",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "pimpikus",
+							"type": "text"
+						},
+						{
+							"key": "passport",
+							"value": "1273871552",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "6471247341",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "ol@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Pimp123*",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://k-ignatiev.сделай.site/register",
+					"protocol": "https",
+					"host": [
+						"k-ignatiev",
+						"сделай",
+						"site"
+					],
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add/room",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "number",
+							"value": "200",
+							"type": "text"
+						},
+						{
+							"key": "count_bed",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "house",
+							"type": "text"
+						},
+						{
+							"key": "discription",
+							"value": "Вполне себе ",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "900",
+							"type": "text"
+						},
+						{
+							"key": "photo",
+							"type": "file",
+							"src": "postman-cloud:///1efb1526-91f2-4c60-95d4-920820986dc8"
+						},
+						{
+							"key": "status",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "https://k-ignatiev.сделай.site/add/room",
+					"protocol": "https",
+					"host": [
+						"k-ignatiev",
+						"сделай",
+						"site"
+					],
+					"path": [
+						"add",
+						"room"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Auth",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "GMcmeKjeQuUQqPUYKa960IB9Rt6r9Z0e",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"admin\",\r\n    \"password\": \"Password123*\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://k-ignatiev.сделай.site/auth",
+					"protocol": "https",
+					"host": [
+						"k-ignatiev",
+						"сделай",
+						"site"
+					],
+					"path": [
+						"auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Kabinet",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "gKexa7rC6KRrotWPRlhE45yO1U4dbipw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://k-ignatiev.сделай.site/kabinet",
+					"protocol": "https",
+					"host": [
+						"k-ignatiev",
+						"сделай",
+						"site"
+					],
+					"path": [
+						"kabinet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User/email",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "iH1m0jem-U0mpf5dHDJ_3zo9y8pIITQk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"new\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://k-ignatiev.сделай.site/user/email",
+					"protocol": "https",
+					"host": [
+						"k-ignatiev",
+						"сделай",
+						"site"
+					],
+					"path": [
+						"user",
+						"email"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Room/count",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://k-ignatiev.сделай.site/room/count?count_bed=3",
+					"protocol": "https",
+					"host": [
+						"k-ignatiev",
+						"сделай",
+						"site"
+					],
+					"path": [
+						"room",
+						"count"
+					],
+					"query": [
+						{
+							"key": "count_bed",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Findone",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://k-ignatiev.сделай.site/room/findone?id_room=5",
+					"protocol": "https",
+					"host": [
+						"k-ignatiev",
+						"сделай",
+						"site"
+					],
+					"path": [
+						"room",
+						"findone"
+					],
+					"query": [
+						{
+							"key": "id_room",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add/invent",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "ZPaTdGVyiuO-B3KDb2udgs6g2iVeRo-1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "name_inventory",
+							"value": "лыжи",
+							"type": "text"
+						},
+						{
+							"key": "size",
+							"value": "2м",
+							"type": "text"
+						},
+						{
+							"key": "count",
+							"value": "40",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "250",
+							"type": "text"
+						},
+						{
+							"key": "discription",
+							"value": "хорошие",
+							"type": "text"
+						},
+						{
+							"key": "photo",
+							"type": "file",
+							"src": "postman-cloud:///1efb1526-91f2-4c60-95d4-920820986dc8"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://k-ignatiev.сделай.site/add/invent",
+					"protocol": "https",
+					"host": [
+						"k-ignatiev",
+						"сделай",
+						"site"
+					],
+					"path": [
+						"add",
+						"invent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Room/edit",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "3-6haFMgRb4wULs_sEvFH3wglIep7Ccq",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"price\": \"155555\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://k-ignatiev.сделай.site/room/edit?id_room=8",
+					"protocol": "https",
+					"host": [
+						"k-ignatiev",
+						"сделай",
+						"site"
+					],
+					"path": [
+						"room",
+						"edit"
+					],
+					"query": [
+						{
+							"key": "id_room",
+							"value": "8"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Room/all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://k-ignatiev.сделай.site/room/all",
+					"protocol": "https",
+					"host": [
+						"k-ignatiev",
+						"сделай",
+						"site"
+					],
+					"path": [
+						"room",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add/order",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "QCqzY-xLZl957ecZ8rZ5JdW09YDvThvD",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_id",
+							"value": "2",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "room_id",
+							"value": "5",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "date_broni",
+							"value": "2024-12-12 18:28:30",
+							"type": "text"
+						},
+						{
+							"key": "count_night",
+							"value": "7",
+							"type": "text"
+						},
+						{
+							"key": "passport",
+							"value": "98723",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "12345678900",
+							"type": "text"
+						},
+						{
+							"key": "FIO",
+							"value": "Лоу флоу слоу",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://k-ignatiev.сделай.site/add/order?id_room=5",
+					"protocol": "https",
+					"host": [
+						"k-ignatiev",
+						"сделай",
+						"site"
+					],
+					"path": [
+						"add",
+						"order"
+					],
+					"query": [
+						{
+							"key": "id_room",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
